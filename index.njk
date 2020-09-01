@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11ty img example</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        max-width: 600px;
+      }
+      img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    {% Image "images/0001.jpg", "image no 01" %} 
+    {% Image "images/0002.jpg", "image no 02" %} 
+    {% Image "images/0003.jpg", "image no 03" %} 
+    {% Image "images/0004.jpg", "image no 04" %} 
+    {% Image "images/0005.jpg", "image no 05" %} 
+    {% Image "images/0006.jpg", "image no 06" %} 
+    {% Image "images/0007.jpg", "image no 07" %} 
+    {% Image "images/0008.jpg", "image no 08" %} 
+    {% Image "images/0009.jpg", "image no 09" %}
+
+    <script type="module" async>
+      import Lazyload from "https://cdn.skypack.dev/vanilla-lazyload";
+      const lazyload = new Lazyload();
+    </script>
+  </body>
+</html>
